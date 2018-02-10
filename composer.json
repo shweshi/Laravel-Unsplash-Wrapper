@@ -1,5 +1,5 @@
 {
-    "name": "shweshi/LaravelUnsplashWrapper",
+    "name": "shweshi/laravel-unsplash-wrapper",
     "description": "A Laravel wrapper for Unsplash",
     "type": "library",
     "license": "MIT",
