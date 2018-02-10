@@ -14,5 +14,16 @@
         "psr-4": {
             "shweshi\\LaravelUnsplashWrapper\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashUsersServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashPhotosServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashCollectionsServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashSearchServiceProvider"
+            ]
+        }
     }
 }
