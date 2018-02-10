@@ -33,7 +33,7 @@ Next under the alias array in config/app.php add
 You must publish the configuration to provide an own service provider stub.
 
 ``` bash
-$ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider"
+$ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Providers\UnsplashServiceProvider"
 ```
 
 Update your settings in the generated app/config/unsplash.php configuration file.
