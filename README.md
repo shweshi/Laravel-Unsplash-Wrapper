@@ -52,12 +52,12 @@ List of methods:
 ``` php
 use UnsplashPhotos;
 
-$photos        = UnsplashPhotos::photos($params)->get();          // list of all photos
-$photo         = UnsplashPhotos::single($id, $params)->get();     // single photo
-$statistic     = UnsplashPhotos::statistic($id, $params)->get();  // single photo statistics
-$downloadUrl   = UnsplashPhotos::download($id);                   // single photo download link
-$curatedPhotos = UnsplashPhotos::curated($params)->get();         // list of curated photos
-$randomPhoto   = UnsplashPhotos::random($params)->get();          // random photo
+$photos        = UnsplashPhotos::photos($params);          // list of all photos
+$photo         = UnsplashPhotos::single($id, $params);     // single photo
+$statistic     = UnsplashPhotos::statistic($id, $params);  // single photo statistics
+$downloadUrl   = UnsplashPhotos::download($id, $params);   // single photo download link
+$curatedPhotos = UnsplashPhotos::curated($params);         // list of curated photos
+$randomPhoto   = UnsplashPhotos::random($params);          // random photo
 ```
 
 ### Users
@@ -65,12 +65,12 @@ $randomPhoto   = UnsplashPhotos::random($params)->get();          // random phot
 ``` php
 use UnsplashUsers;
 
-$user         = UnsplashUsers::single($username, $params)->get();       // single user
-$portfolio    = UnsplashUsers::portfolio($username);                    // single user's portfolio
-$photos       = UnsplashUsers::photos($username, $params)->get();       // single user's photos
-$photos       = UnsplashUsers::likes($username, $params)->get();        // single user's likes
-$collections  = UnsplashUsers::collections($username, $params)->get();  // single user's collections
-$statistics   = UnsplashUsers::statistics($username, $params)->get();   // single user's statistics
+$user         = UnsplashUsers::profile($username, $params);      // single user
+$portfolio    = UnsplashUsers::portfolio($username);             // single user's portfolio
+$photos       = UnsplashUsers::photos($username, $params);       // single user's photos
+$photos       = UnsplashUsers::likes($username, $params);        // single user's likes
+$collections  = UnsplashUsers::collections($username, $params);  // single user's collections
+$statistics   = UnsplashUsers::statistics($username, $params);   // single user's statistics
 ```
 
 ### Collections
@@ -78,13 +78,13 @@ $statistics   = UnsplashUsers::statistics($username, $params)->get();   // singl
 ``` php
 use UnsplashCollections;
 
-$collection  = UnsplashCollections::collections($params)->get(); // list of all collections
-$collection  = UnsplashCollections::single($id)->get(); // single collections
-$photos      = UnsplashCollections::photos($id, $params)->get(); // collection photos
-$statistic   = UnsplashCollections::statistic($id, $params)->get(); // single collections statistics
-$collection  = UnsplashCollections::curated($params)->get(); // list of curated collections
-$collection  = UnsplashCollections::related($id)->get(); // list of related collections
-$collection  = UnsplashCollections::featured($params)->get(); // list of featured collections
+$collection  = UnsplashCollections::collections($params);    // list of all collections
+$collection  = UnsplashCollections::single($id, $params);    // single collections
+$photos      = UnsplashCollections::photos($id, $params);    // collection photos
+$statistic   = UnsplashCollections::statistic($id, $params); // single collections statistics
+$collection  = UnsplashCollections::curated($params);        // list of curated collections
+$collection  = UnsplashCollections::related($id, $params);   // list of related collections
+$collection  = UnsplashCollections::featured($params);       // list of featured collections
 ```
 
 ### Search
@@ -92,7 +92,7 @@ $collection  = UnsplashCollections::featured($params)->get(); // list of feature
 ``` php
 use UnsplashSearch;
 
-$photos     = UnsplashSearch::photo($query, $params)->get();
-$collection = UnsplashSearch::collection($query, $params)->get();
-$user       = UnsplashSearch::user($query, $params)->get();
+$photos     = UnsplashSearch::photo($query, $params);
+$collection = UnsplashSearch::collection($query, $params);
+$user       = UnsplashSearch::user($query, $params);
 ```
