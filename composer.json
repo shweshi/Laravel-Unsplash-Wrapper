@@ -18,11 +18,11 @@
     "extra": {
         "laravel": {
             "providers": [
-              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashServiceProvider",
-              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashUsersServiceProvider",
-              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashPhotosServiceProvider",
-              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashCollectionsServiceProvider",
-              "shweshi\\LaravelUnsplashWrapper\\Provider\\UnsplashSearchServiceProvider"
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashUsersServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashPhotosServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashCollectionsServiceProvider",
+              "shweshi\\LaravelUnsplashWrapper\\Providers\\UnsplashSearchServiceProvider"
             ]
         }
     }

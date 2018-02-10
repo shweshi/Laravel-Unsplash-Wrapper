@@ -12,13 +12,16 @@ $ composer require shweshi/laravel-unsplash-wrapper
 If you do not run Laravel 5.5 (or higher), then add the service provider in config/app.php:
 
 ```
-shweshi\LaravelUnsplashWrapper\LaravelUnsplashServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\LaravelUnsplashSearchServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\LaravelUnsplashUsersServiceProvider:class
-shweshi\LaravelUnsplashWrapper\LaravelUnsplashPhotosServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\LaravelUnsplashCollectionsServiceProvider:class
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider:class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashSearchServiceProvider:class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashUsersServiceProvider:class
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashPhotosServiceProvider:class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashCollectionsServiceProvider:class
 ```
-Next under the alias array
+
+If you do run the package on Laravel 5.5+, package auto-discovery takes care of the magic of adding the service provider.
+
+Next under the alias array in config/app.php add
 
 ```
 'UnsplashSearch' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashSearchFacade::class,
@@ -27,12 +30,10 @@ Next under the alias array
 'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class
 ```
 
-If you do run the package on Laravel 5.5+, package auto-discovery takes care of the magic of adding the service provider.
-
 You must publish the configuration to provide an own service provider stub.
 
 ``` bash
-$ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\LaravelUnsplashServiceProvider"
+$ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider"
 ```
 
 Update your settings in the generated app/config/unsplash.php configuration file.
