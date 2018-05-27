@@ -95,3 +95,7 @@ $photos     = UnsplashSearch::photo($query, $params);
 $collection = UnsplashSearch::collection($query, $params);
 $user       = UnsplashSearch::user($query, $params);
 ```
+
+### Example
+
+`echo UnsplashPhotos::photos(['page' => 1, 'order_by' => 'oldest']);`
