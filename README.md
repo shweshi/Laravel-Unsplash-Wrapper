@@ -12,11 +12,11 @@ $ composer require shweshi/laravel-unsplash-wrapper
 If you do not run Laravel 5.5 (or higher), then add the service provider in config/app.php:
 
 ```
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashSearchServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashUsersServiceProvider:class
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashPhotosServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashCollectionsServiceProvider:class
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashSearchServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashUsersServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashPhotosServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashCollectionsServiceProvider::class,
 ```
 
 If you do run the package on Laravel 5.5+, package auto-discovery takes care of the magic of adding the service provider.
@@ -27,7 +27,7 @@ Next under the alias array in config/app.php add
 'UnsplashSearch' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashSearchFacade::class,
 'UnsplashUsers' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashUsersFacade::class,
 'UnsplashPhotos' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashPhotosFacade::class,
-'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class
+'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class,
 ```
 
 You must publish the configuration to provide an own service provider stub.
