@@ -99,3 +99,11 @@ $user       = UnsplashSearch::user($query, $params);
 ### Example
 
 `echo UnsplashPhotos::photos(['page' => 1, 'order_by' => 'oldest']);`
+
+will get you something like
+```json
+ixlib=rb-0.3.5\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64\u0026s=4ddd6656ddd74206872f45c033371087","large":"https://images.unsplash.com/profile-1441298310363-3eb4b1feb829?
+.....
+```
+which you will need to format
+
