@@ -51,7 +51,7 @@ List of methods:
 
 ``` php
 
-$photos        = UnsplashPhotos::photos([], $params);          // list of all photos
+$photos        = UnsplashPhotos::photos([]);          // list of all photos
 $photo         = UnsplashPhotos::single($id, $params);     // single photo
 $statistic     = UnsplashPhotos::statistic($id, $params);  // single photo statistics
 $downloadUrl   = UnsplashPhotos::download($id, $params);   // single photo download link
