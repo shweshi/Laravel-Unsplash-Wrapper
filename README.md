@@ -39,7 +39,7 @@ $ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Provider
 Update your settings in the generated app/config/unsplash.php configuration file.
 ```
 return [
-    'ApplicationID' => 'YOUR APPLICATION ID HERE',
+    'ApplicationID' => 'YOUR APPLICATION ACCES KEY HERE',
 ];
 ```
 ## Usage
@@ -50,9 +50,8 @@ List of methods:
 ### Photos
 
 ``` php
-use UnsplashPhotos;
 
-$photos        = UnsplashPhotos::photos($params);          // list of all photos
+$photos        = UnsplashPhotos::photos([], $params);          // list of all photos
 $photo         = UnsplashPhotos::single($id, $params);     // single photo
 $statistic     = UnsplashPhotos::statistic($id, $params);  // single photo statistics
 $downloadUrl   = UnsplashPhotos::download($id, $params);   // single photo download link
