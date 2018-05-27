@@ -12,11 +12,11 @@ $ composer require shweshi/laravel-unsplash-wrapper
 If you do not run Laravel 5.5 (or higher), then add the service provider in config/app.php:
 
 ```
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider::class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashSearchServiceProvider::class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashUsersServiceProvider::class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashPhotosServiceProvider::class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashCollectionsServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashSearchServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashUsersServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashPhotosServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashCollectionsServiceProvider::class,
 ```
 
 If you do run the package on Laravel 5.5+, package auto-discovery takes care of the magic of adding the service provider.
