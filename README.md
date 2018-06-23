@@ -12,11 +12,11 @@ $ composer require shweshi/laravel-unsplash-wrapper
 If you do not run Laravel 5.5 (or higher), then add the service provider in config/app.php:
 
 ```
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashSearchServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashUsersServiceProvider:class
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashPhotosServiceProvider:class,
-shweshi\LaravelUnsplashWrapper\Providers\LaravelUnsplashCollectionsServiceProvider:class
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashSearchServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashUsersServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashPhotosServiceProvider::class,
+shweshi\LaravelUnsplashWrapper\Providers\UnsplashCollectionsServiceProvider::class,
 ```
 
 If you do run the package on Laravel 5.5+, package auto-discovery takes care of the magic of adding the service provider.
@@ -27,7 +27,7 @@ Next under the alias array in config/app.php add
 'UnsplashSearch' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashSearchFacade::class,
 'UnsplashUsers' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashUsersFacade::class,
 'UnsplashPhotos' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashPhotosFacade::class,
-'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class
+'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class,
 ```
 
 You must publish the configuration to provide an own service provider stub.
@@ -39,7 +39,7 @@ $ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Provider
 Update your settings in the generated app/config/unsplash.php configuration file.
 ```
 return [
-    'ApplicationID' => 'YOUR APPLICATION ID HERE',
+    'ApplicationID' => 'YOUR APPLICATION ACCES KEY HERE',
 ];
 ```
 ## Usage
@@ -50,9 +50,8 @@ List of methods:
 ### Photos
 
 ``` php
-use UnsplashPhotos;
 
-$photos        = UnsplashPhotos::photos($params);          // list of all photos
+$photos        = UnsplashPhotos::photos([]);          // list of all photos
 $photo         = UnsplashPhotos::single($id, $params);     // single photo
 $statistic     = UnsplashPhotos::statistic($id, $params);  // single photo statistics
 $downloadUrl   = UnsplashPhotos::download($id, $params);   // single photo download link
@@ -96,3 +95,15 @@ $photos     = UnsplashSearch::photo($query, $params);
 $collection = UnsplashSearch::collection($query, $params);
 $user       = UnsplashSearch::user($query, $params);
 ```
+
+### Example
+
+`echo UnsplashPhotos::photos(['page' => 1, 'order_by' => 'oldest']);`
+
+will get you something like
+```json
+ixlib=rb-0.3.5\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64\u0026s=4ddd6656ddd74206872f45c033371087","large":"https://images.unsplash.com/profile-1441298310363-3eb4b1feb829?
+.....
+```
+which you will need to format
+
