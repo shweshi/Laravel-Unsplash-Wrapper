@@ -1,5 +1,9 @@
 # LaravelUnsplashWrapper
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/shweshi/Laravel-Unsplash-Wrapper.svg?style=flat-square)](https://packagist.org/packages/shweshi/Laravel-Unsplash-Wrapper)
+[![StyleCI](https://styleci.io/repos/121030344/shield?branch=master)](https://styleci.io/repos/121030344)
+[![Total Downloads](https://img.shields.io/packagist/dt/shweshi/Laravel-Unsplash-Wrapper.svg?style=flat-square)](https://packagist.org/packages/shweshi/Laravel-Unsplash-Wrapper)
+
 **A Laravel wrapper for Unsplash.**
 
 ## Install
