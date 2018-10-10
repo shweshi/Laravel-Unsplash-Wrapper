@@ -7,7 +7,7 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a single page from the list of all collections.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -19,7 +19,7 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a single page from the list of featured collections.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -31,7 +31,7 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a single page from the list of curated collections.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -43,8 +43,8 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a collection using id.
      *
-     * @param  string  $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */
@@ -56,8 +56,8 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a collection’s photos.
      *
-     * @param  string  $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */
@@ -69,8 +69,8 @@ class UnsplashCollections extends BaseClass
     /**
      * Retrieve a list of collections related to this one.
      *
-     * @param  string  $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */

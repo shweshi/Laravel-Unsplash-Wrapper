@@ -7,7 +7,7 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve a single page from the list of all photos.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -19,7 +19,7 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve curated list of photos.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -31,8 +31,8 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve a single photo using id.
      *
-     * @param  string  $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */
@@ -44,7 +44,7 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve a random photo.
      *
-     * @param  array  $params
+     * @param array $params
      *
      * @return mixed
      */
@@ -56,8 +56,8 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve statistics of the photo.
      *
-     * @param  string $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */
@@ -69,8 +69,8 @@ class UnsplashPhotos extends BaseClass
     /**
      * Retrieve download link of the photo.
      *
-     * @param  string $id
-     * @param  array  $params
+     * @param string $id
+     * @param array  $params
      *
      * @return mixed
      */

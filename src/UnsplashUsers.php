@@ -5,10 +5,10 @@ namespace shweshi\LaravelUnsplashWrapper;
 class UnsplashUsers extends BaseClass
 {
     /**
-     * Retrieve profile of the user
+     * Retrieve profile of the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */
@@ -18,10 +18,10 @@ class UnsplashUsers extends BaseClass
     }
 
     /**
-     * Retrieve portfolio url of the user
+     * Retrieve portfolio url of the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */
@@ -31,10 +31,10 @@ class UnsplashUsers extends BaseClass
     }
 
     /**
-     * Retrieve photos of the user
+     * Retrieve photos of the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */
@@ -44,10 +44,10 @@ class UnsplashUsers extends BaseClass
     }
 
     /**
-     * Retrieve photos liked by the user
+     * Retrieve photos liked by the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */
@@ -57,10 +57,10 @@ class UnsplashUsers extends BaseClass
     }
 
     /**
-     * Retrieve collections of the user
+     * Retrieve collections of the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */
@@ -70,10 +70,10 @@ class UnsplashUsers extends BaseClass
     }
 
     /**
-     * Retrieve statistics of the user
+     * Retrieve statistics of the user.
      *
-     * @param  string  $username
-     * @param  array  $params
+     * @param string $username
+     * @param array  $params
      *
      * @return mixed
      */

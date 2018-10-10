@@ -13,8 +13,8 @@ class UnsplashSearchServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('UnsplashSearch', function() {
-            return new \shweshi\LaravelUnsplashWrapper\UnsplashSearch;
+        $this->app->bind('UnsplashSearch', function () {
+            return new \shweshi\LaravelUnsplashWrapper\UnsplashSearch();
         });
     }
 }
