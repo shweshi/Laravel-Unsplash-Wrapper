@@ -13,8 +13,8 @@ class UnsplashPhotosServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('UnsplashPhotos', function() {
-            return new \shweshi\LaravelUnsplashWrapper\UnsplashPhotos;
+        $this->app->bind('UnsplashPhotos', function () {
+            return new \shweshi\LaravelUnsplashWrapper\UnsplashPhotos();
         });
     }
 }

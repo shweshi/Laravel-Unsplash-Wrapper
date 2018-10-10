@@ -13,8 +13,8 @@ class UnsplashCollectionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('UnsplashCollections', function() {
-            return new \shweshi\LaravelUnsplashWrapper\UnsplashCollections;
+        $this->app->bind('UnsplashCollections', function () {
+            return new \shweshi\LaravelUnsplashWrapper\UnsplashCollections();
         });
     }
 }

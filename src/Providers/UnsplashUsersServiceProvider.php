@@ -13,8 +13,8 @@ class UnsplashUsersServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('UnsplashUsers', function() {
-            return new \shweshi\LaravelUnsplashWrapper\UnsplashUsers;
+        $this->app->bind('UnsplashUsers', function () {
+            return new \shweshi\LaravelUnsplashWrapper\UnsplashUsers();
         });
     }
 }

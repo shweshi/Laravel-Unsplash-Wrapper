@@ -7,22 +7,23 @@ use GuzzleHttp\Client;
 class BaseClass
 {
     /**
-     * Base url of unsplash api
+     * Base url of unsplash api.
      *
      * @var string
      */
     private $baseUrl = 'https://api.unsplash.com/';
 
     /**
-     * Response from unsplash api
+     * Response from unsplash api.
      */
     private $response;
 
     /**
-     * Calls unsplash api
+     * Calls unsplash api.
      *
-     * @param  string  $url
-     * @param  array  $params
+     * @param string $url
+     * @param array  $params
+     *
      * @return mix
      */
     protected function call($url, $params)
@@ -32,11 +33,12 @@ class BaseClass
         ]);
         $response = $client->request('GET', $url, [
             'headers' => [
-                'Authorization'  => 'Client-ID '. config('unsplash.ApplicationID')
+                'Authorization'  => 'Client-ID '.config('unsplash.ApplicationID'),
             ],
             'form_params' => $params,
-            'query' => $params
+            'query'       => $params,
         ]);
+
         return $response->getBody();
     }
 }
