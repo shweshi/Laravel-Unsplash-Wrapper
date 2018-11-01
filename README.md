@@ -1,7 +1,9 @@
 # LaravelUnsplashWrapper
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/shweshi/Laravel-Unsplash-Wrapper.svg?style=flat-square)](https://packagist.org/packages/shweshi/Laravel-Unsplash-Wrapper)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/?branch=master)
 [![StyleCI](https://styleci.io/repos/121030344/shield?branch=master)](https://styleci.io/repos/121030344)
+[![Build Status](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/badges/build.png?b=master)](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/build-status/master)
 [![Total Downloads](https://img.shields.io/packagist/dt/shweshi/Laravel-Unsplash-Wrapper.svg?style=flat-square)](https://packagist.org/packages/shweshi/Laravel-Unsplash-Wrapper)
 
 **A Laravel wrapper for Unsplash.**
