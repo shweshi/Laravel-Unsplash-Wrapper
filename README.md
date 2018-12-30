@@ -5,6 +5,7 @@
 [![StyleCI](https://styleci.io/repos/121030344/shield?branch=master)](https://styleci.io/repos/121030344)
 [![Build Status](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/badges/build.png?b=master)](https://scrutinizer-ci.com/g/shweshi/Laravel-Unsplash-Wrapper/build-status/master)
 [![Total Downloads](https://img.shields.io/packagist/dt/shweshi/Laravel-Unsplash-Wrapper.svg?style=flat-square)](https://packagist.org/packages/shweshi/Laravel-Unsplash-Wrapper)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper?ref=badge_shield)
 
 **A Laravel wrapper for Unsplash.**
 
@@ -113,3 +114,7 @@ ixlib=rb-0.3.5\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=c
 ```
 which you will need to format
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper?ref=badge_large)
