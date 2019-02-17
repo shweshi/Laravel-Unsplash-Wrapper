@@ -114,7 +114,9 @@ ixlib=rb-0.3.5\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=c
 ```
 which you will need to format
 
+## Contributing
 
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CODE OF CONDUCT](CODE_OF_CONDUCT.md) for details.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshweshi%2FLaravel-Unsplash-Wrapper?ref=badge_large)
