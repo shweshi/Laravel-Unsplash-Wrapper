@@ -37,7 +37,7 @@ Next under the alias array in config/app.php add
 'UnsplashCollections' => shweshi\LaravelUnsplashWrapper\Facades\UnsplashCollectionsFacade::class,
 ```
 
-You must publish the configuration to provide an own service provider stub.
+You must publish the configuration to provide your own service provider stub.
 
 ``` bash
 $ php artisan vendor:publish --provider="shweshi\LaravelUnsplashWrapper\Providers\UnsplashServiceProvider"
