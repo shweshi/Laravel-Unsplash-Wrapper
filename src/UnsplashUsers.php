@@ -77,7 +77,7 @@ class UnsplashUsers extends BaseClass
      *
      * @return mixed
      */
-    public function statics($username, array $params)
+    public function statistics($username, array $params)
     {
         return $this->call('users/'.$username.'/statistics', $params);
     }
